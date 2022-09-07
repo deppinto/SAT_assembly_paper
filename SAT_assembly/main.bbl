@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{40}%
+\begin{thebibliography}{42}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -194,7 +194,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
   {Sacanna}}\ and\ \bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
   {Pine}},\ }\href {\doibase 10.1016/j.cocis.2011.01.003} {\bibfield  {journal}
-  {\bibinfo  {journal} {Current Opinion in Colloid & Interface Science}\
+  {\bibinfo  {journal} {Current Opinion in Colloid \& Interface Science}\
   }\textbf {\bibinfo {volume} {16}},\ \bibinfo {pages} {96} (\bibinfo {year}
   {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2012)\citenamefont {Wang},
@@ -326,17 +326,17 @@
   {\doibase 10.5281/zenodo.1153959} {\  (\bibinfo {year} {2018}),\
   10.5281/zenodo.1153959},\ \Eprint {http://arxiv.org/abs/1802.04980}
   {arXiv:1802.04980} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Russo}\ \emph
-  {et~al.}(2021{\natexlab{a}})\citenamefont {Russo}, \citenamefont {Leoni},
-  \citenamefont {Martelli},\ and\ \citenamefont {SCIORTINO}}]{Russo2021}%
+\bibitem [{\citenamefont {Russo}\ \emph {et~al.}(2021)\citenamefont {Russo},
+  \citenamefont {Leoni}, \citenamefont {Martelli},\ and\ \citenamefont
+  {SCIORTINO}}]{Russo2021}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Russo}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Leoni}},
   \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Martelli}}, \ and\
   \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {SCIORTINO}},\ }\href
   {\doibase 10.1088/1361-6633/ac42d9} {\bibfield  {journal} {\bibinfo
-  {journal} {Reports on Progress in Physics}\ } (\bibinfo {year}
-  {2021}{\natexlab{a}}),\ 10.1088/1361-6633/ac42d9}\BibitemShut {NoStop}%
+  {journal} {Reports on Progress in Physics}\ } (\bibinfo {year} {2021}),\
+  10.1088/1361-6633/ac42d9}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sciortino}\ \emph {et~al.}(2009)\citenamefont
   {Sciortino}, \citenamefont {Giacometti},\ and\ \citenamefont
   {Pastore}}]{Sciortino2009}%
@@ -349,20 +349,19 @@
   {volume} {103}},\ \bibinfo {pages} {237801} (\bibinfo {year} {2009})},\
   \Eprint {http://arxiv.org/abs/0911.3054} {arXiv:0911.3054} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Russo}\ \emph
-  {et~al.}(2021{\natexlab{b}})\citenamefont {Russo}, \citenamefont {Romano},
-  \citenamefont {Kroc}, \citenamefont {Sciortino}, \citenamefont {Rovigatti},\
-  and\ \citenamefont {Sulc}}]{Russo2021a}%
+\bibitem [{\citenamefont {Russo}\ \emph {et~al.}(2022)\citenamefont {Russo},
+  \citenamefont {Romano}, \citenamefont {Kroc}, \citenamefont {Sciortino},
+  \citenamefont {Rovigatti},\ and\ \citenamefont {{\v{S}}ulc}}]{Russo2022}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Russo}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Romano}},
   \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Kroc}}, \bibinfo {author}
   {\bibfnamefont {F.}~\bibnamefont {Sciortino}}, \bibinfo {author}
   {\bibfnamefont {L.}~\bibnamefont {Rovigatti}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {P.}~\bibnamefont {Sulc}},\ }\href
-  {http://arxiv.org/abs/2111.04355} {\  (\bibinfo {year}
-  {2021}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/2111.04355}
-  {arXiv:2111.04355} \BibitemShut {NoStop}%
+  {\bibfnamefont {P.}~\bibnamefont {{\v{S}}ulc}},\ }\href {\doibase
+  10.1088/1361-648x/ac5479} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of Physics: Condensed Matter}\ }\textbf {\bibinfo {volume} {34}},\ \bibinfo
+  {pages} {354002} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {E{\'{e}}n}\ and\ \citenamefont
   {Biere}(2005)}]{Een2005}%
   \BibitemOpen
@@ -475,6 +474,23 @@
   {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
   {118}},\ \bibinfo {pages} {9882} (\bibinfo {year} {2003})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Chapman}\ \emph {et~al.}(1989)\citenamefont
+  {Chapman}, \citenamefont {Gubbins}, \citenamefont {Jackson},\ and\
+  \citenamefont {Radosz}}]{Chapman1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Chapman}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Gubbins}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Jackson}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Radosz}},\ }\href
+  {\doibase https://doi.org/10.1016/0378-3812(89)80308-5} {\bibfield  {journal}
+  {\bibinfo  {journal} {Fluid Phase Equilibria}\ }\textbf {\bibinfo {volume}
+  {52}},\ \bibinfo {pages} {31} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Israelachvili}(2011)}]{israelachvili2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~N.}\ \bibnamefont
+  {Israelachvili}},\ }\href@noop {} {\emph {\bibinfo {title} {Intermolecular
+  and surface forces}}}\ (\bibinfo  {publisher} {Academic press},\ \bibinfo
+  {year} {2011})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Biancaniello}\ \emph {et~al.}(2005)\citenamefont
   {Biancaniello}, \citenamefont {Kim},\ and\ \citenamefont
   {Crocker}}]{Biancaniello2005}%
