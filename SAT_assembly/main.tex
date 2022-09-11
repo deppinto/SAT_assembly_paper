@@ -10,7 +10,7 @@
 
 \begin{document}
 %\title{\textcolor{red}{Design strategies for the self-assembly of polyhedral shells using SAT-assembly}}
-\title{\textcolor{red}{Design strategies for the self-assembly of polyhedral shells via SAT-assembly}}
+\title{\textcolor{red}{Design strategies for the self-assembly of polyhedral shells}}
 
 \author{Diogo E. P. Pinto$^1$, Petr $\check{\text{S}}$ulc$^2$, Francesco Sciortino$^1$ and John Russo$^1$}
     \email[Correspondence email address: ]{john.russo@uniroma1.it}% Your name
@@ -20,10 +20,16 @@
 \date{\today} % Leave empty to omit a date
 
 \begin{abstract}
-The control over the self-assembly of complex structures is a longstanding challenge of material science, especially on the colloidal scale, where a subtle interplay of thermodynamic and kinetic driving forces come into play.
-
-
- to which polyhedral shells are prime candidates thanks to their 
+\textcolor{red}{The control over the self-assembly of complex structures is a long-standing challenge of material science, especially on the colloidal scale, as the desired assembly pathway is often kinetically derailed by the formation of amorphous aggregates. Here we investigate in detail the problem of the self-assembly of
+%the
+three Archimedean shells,
+%that can be assembled from five-coordinated unit, 
+i.e. the icosahedron, the snub cube, and the snub dodecahedron. We use Patchy Particles with five interaction sites (or patches) as our model for the building blocks, and recast the assembly problem as a satisfiability problem (SAT) for the patch interactions. This allows us to find effective designs for all targets, and to selectively suppress unwanted structures.
+By tuning the geometrical arrangement and the specific interactions of the patches, we find 
+that lowering the symmetry of the building blocks is an effective way to reduce the number of competing structures, which in turn can considerably increase the yield of the target structure. We also consider the concentration dependence of our assemblies as a way to externally control which target structure is formed. These results cement SAT-assembly as an invaluable tool to solve inverse design problems.
+%, both by tuning the geometrical arrangement and the interactions of the patches, can considerably increase the yield of the target structure, and can change the 
+%We show that both the geometrical arrangement and the specific interactions of the patches can be tuned to control the self-assembly yield of the different structures according to a simple principle: by reducing the symmetry of target structure one also reduces the and the the self-assembly yield is affected by the geometry of the sites and their coloring. This allows us to ...
+}
 %Inspired by Nature, the self-assembly of complex structures has been a longstanding challenge of material science. Self-assembly encompasses a large array of phenomena through which materials are formed using microscopic building blocks that follow simple assembly rules. One example of these building blocks are patchy particles. These are commonly characterized by a hard core coated by one or more patches that interact attractively. By coloring each patch differently and formulating the assembly as a color-color interaction problem, one is able to use SAT as an highly optimized tool to find a particle design that satisfies the constrains imposed by the desired structure. In this work, we use SAT on a patchy particle system of valence five to assemble finite-size polyhedron shells. We find that one can significantly improve on the self-assembly yield of the most trivial color arrangements. We also show that these designs are robust to different patch widths and geometries. Furthermore, we also highlight how this tool can be used to exclude competing structures, thus more efficiently target the desired finite-size polyhedron shells. These results cement SAT as an invaluable tool to solve the inverse design problem.
 \end{abstract}
 
