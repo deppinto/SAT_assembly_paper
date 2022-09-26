@@ -36,7 +36,7 @@ that lowering the symmetry of the building blocks is an effective way to reduce 
 \section{Introduction}
 
 %The assembly of complex structures has been a longstanding challenge of material science \cite{Bishop2022}.
-Self-assembly encompasses a large array of phenomena through which materials are formed using simple assembly rules of microscopic building blocks \cite{Whitelam2015}. In Nature, many striking examples of this assembly are found \cite{Whitesides2002, Parnell2015, Teyssier2015}. In the case of synthetic materials, although quite a complex process, some realizations have been successfully assembled, from three-dimensional crystals to polyhedral shells \cite{Dziomkina2005, Glotzer2007, Kim2011, LaCour2022,  McGorty2010, Mu2022, Nykypanchuk2008, Sacanna2011, Wang2012, Wang2015, Joshi2016,Bishop2022}. One of the main difficulties resides in how to optimize the geometrical properties or interactions between the building blocks without leading to a kinetically arrested configurations~\cite{Frenkel2011, Lash2015, Blaaderen2006, Meulen2015}.
+Self-assembly encompasses a large array of phenomena through which materials are formed using simple microscopic building blocks \cite{Whitelam2015}. In Nature, many striking examples of this assembly are found, from virus capsids to lipid bilayers~\cite{Whitesides2002, Parnell2015, Teyssier2015}, but assembling new synthetic materials has proved to be very challenging. Successful examples of artificial self-assembly include three-dimensional crystals and polyhedral shells \cite{Dziomkina2005, Glotzer2007, Kim2011, LaCour2022,  McGorty2010, Mu2022, Nykypanchuk2008, Sacanna2011, Wang2012, Wang2015, Joshi2016,Bishop2022}. One of the main difficulties resides in how to optimize the geometrical properties or interactions between the building blocks without leading to  kinetically arrested configurations~\cite{Frenkel2011, Lash2015, Blaaderen2006, Meulen2015}.
 
 Here we focus on the self-assembly of finite-size structures and in particular on specific polyhedron shells. 
 From an application standpoint, the potential of closed shells to act as drug delivery systems have been a widely researched topic, where a given drug is encapsulated within a closed shell and then driven to a specific diseased area where the drug is locally released such that the least amount of non diseased tissue is affected \cite{Huang2007, Uchida2007}. For this, the shell needs to close around a specific reagent and then open when external conditions are met. Recently, there have been suitable experimental realizations, for example, using DNA-origami, where selective interactions can be introduced to mimic patchy particles \cite{Mosayebi2017, Lee2022, Jun2021, Rothemund2006}.
@@ -208,7 +208,7 @@ Solving the equation above shows that the larger the number of patches with the 
 %In the same plots we show multiple other designs with only one specie, ranging from two colors to five. We find that, generally, the yield increases with the number of colors. At five colors the yield of the icosahedron and snub cube structures is close to maximum. This is due to the fact that the probability of creating a wrong bound decreases with increasing number of colors. For example, for the snub cube, there is only one specific bound that each patch can make in the final structure (since there is no rigid body rotational symmetry of the particles), but in the C2(1) case the top patches can form three possible connections. As such, the probability that the top three green patches form a correct bond is one third, while the two red bottom ones is one half. Thus, the probability of correctly assembling a particle is approximately $0.009$. As the number of colors increases so does the probability that a bond is formed correctly. For example, for the five colors there is only one possible bond formed for each patch (due to the interactions chosen) which is always the correct one. Thus, a particle can never form an incorrect bond. The only cases that do not follow this rule are the C2(1) and C2(2) designs. They share the same number of colors and are designed such that the probability of correct bonding is equal. Nonetheless, the average yield of the snub cube increases (from $\approx55\%$ to $\approx80\%$). We hypothesize that the design C2(2) creates a larger distinction between the patches than C2(1). In the case of the snub cube, the top three patches form the triangles seen in Fig.~\ref{SAT} while the two bottom patches form the square. In the design C2(1) the top three patches are indistinguishable, while in C2(2) its only a top one and the bottom two. Thus, in C2(2) the three top patches are now distinguishable by color while the bottom are by geometry. We hypothesize that this provides an easier pathway to assembly. The same is observed in the case of the snub dodecahedron, where now the bottom patches form pentagons. This is also supported by the fact that for the icosahedron, where all angles are the same, both designs have similar yields.
 
 \noindent
-\emph{5. Frustrated designs have yields that depend on thermodynamic conditions} In panel \textit{d} of Fig.~\ref{Yield} we plot the yield for a frustrated C5 design in which $\gamma=85.26^\circ$. The in-plane angle is close to the ideal angle for the assembly of the snub cube, and at small densities we indeed observe the formation of snub cubes. Increasing the density though, we observe a switch to the smaller icosahedral shells. While the icosahedron has a much larger free energy of formation compared to the snub cube (due to the angle being unfavourable to the icosahedron), at high density this is compensated by the translational free energy (i.e. the ideal gas free energy), which is higher for the icosahedron (as it's number density of clusters is higher). The possibility to tune the yield of different structures, and to switch between them, as a function of external control parameters is a property of experimental interest.
+\emph{5. Frustrated designs allow to target different structures depending on thermodynamic conditions.} In Fig.~\ref{Yield}\textit{d}  we plot the yield for a frustrated C5 design in which $\gamma=85.26^\circ$. The in-plane angle is close to the ideal angle for the assembly of the snub cube, which is indeed the most stable structure at low densities. Increasing the density though, we observe a switch to the smaller icosahedral shells. While the icosahedron has a much larger free energy of formation compared to the snub cube (due to the angle being unfavourable to the icosahedron), at high density this is compensated by the translational free energy (i.e. the ideal gas free energy), which is higher for the icosahedron (having a higher number density of clusters compared to the snub cube). The possibility to switch between different target structures as a function of external control parameters is a property of experimental interest.
 
 \begin{figure*}[t]
 	\includegraphics{fig4.pdf}
@@ -222,42 +222,59 @@ Solving the equation above shows that the larger the number of patches with the 
 
 \subsection{Thermodynamic properties}
 
-Given the simplicity of the two color solution, C2(1), we also present a simple study of the phase behavior of these patchy particles in Fig.~\ref{Energy}. As a first approach we restrict ourselves to the parameters $\cos\theta_{max}=0.98$ and an in plane angle of $90$ degrees. This combination favors the snub cube shell as presented above. We observe a non-monotonic behavior of the average energy as a function of density, characteristic of self-assembly systems \cite{Sciortino2009}. For low densities there is an entropic gas phase where most particles are unbounded. As density increases or temperature decreases, more clusters will be formed. For intermediate densities we observe the minimum of the energy which corresponds to a gas of snub cubes. Here, the density is large enough and the temperature low enough for particles to bound and remain bounded until a snub cube is formed. These shells are the equilibrium structures for the patchy particles used. Since the density is still quite low, the average distance between clusters will be large enough such that they will rarely interact with each other over the course of the simulations, which leads to the gas of clusters. For large densities, the liquid phase is approached and less clusters are formed leading to an increase of the average energy. Eventually the liquid phase percolates the system. These results in combination with the snapshots shown suggest there is a possible phase separation of the liquid and gas phase. Future studies should focus on the characterization of the phase space of these structures.
 
-The bottom left plot of Fig.~\ref{Energy} shows the fractions of monomers as a functions of density. All the same temperatures are shown, but two new curves are added at $T=0.1$ with designs C4(1) and C5 (see Fig.~\ref{Yield}). We find that the behavior for lower densities is similar independently of the design used; it becomes relevant only at higher densities. This suggests that mean field theories, like Wertheim theory \cite{Chapman1989}, might be able to describe these systems at low densities independently of design used.
+In Fig.~\ref{Energy} we present a study of the phase behavior of the two color solution, C2(1). For simplicity, we restrict ourselves to the parameters $\cos\theta_{max}=0.98$ and $\gamma=90^\circ$, a combination which favors the snub cube structure. In panel \emph{a} we plot the Energy-vs-density, $E(\rho)$, curve at different temperatures, where we observe a non-monotonic behavior of the average energy $E(\rho)$ with increasing density. This behaviour is characteristic of the self-assembly of finite-size aggregates~\cite{Sciortino2009}: at low densities the system is in a gas phase of mostly monomers (unbounded particles); with increasing density particles start to aggregate and the energy decreases approaching the value $E=5/2$ (in units of $\epsilon$) which corresponds to an ideal gas phase of fully formed aggregates; for larger densities the gas phase competes with a percolated liquid phase that, due to geometric constraints originating from the patches arrangement on the surface of the particle, cannot form all available bonds and has thus higher energy than the gas phase. A thermodynamic motivation for the link between a $E(\rho)$ minimum and phase separation is discussed in Ref.~\cite{Russo2021}. Fig.~\ref{Energy}b shows shapshots of Monte Carlo simulations of increasing densities and at three different temperatures, displaying the transition between a gas of monomers, to a gas of snub cubes, to a percolated liquid phase.
 
-We also measure the critical micelle concentration (CMC), which corresponds to when the number density of monomers ($\rho_1$) is equal to $50\%$. Using a linear interpolation of the points we reach the values shown in the bottom right plot of Fig.~\ref{Energy}. We use the inverse temperature and the logarithm of the density to highlight the exponential dependence. We also plot the points corresponding to the minima of the energy, which also show a similar exponential increase. Lastly, two theoretical curves are shown. The mean-field curve is calculated using an approximation suggested for similar patchy particle systems \cite{Kraft2012}:
+
+
+%Here, the density is large enough and the temperature low enough for particles to bound and remain bounded until a snub cube is formed. These shells are the equilibrium structures for the patchy particles used. Since the density is still quite low, the average distance between clusters will be large enough such that they will rarely interact with each other over the course of the simulations, which leads to the gas of clusters.
+%For large densities, the liquid phase is approached and less clusters are formed leading to an increase of the average energy. Eventually the liquid phase percolates the system. These results in combination with the snapshots shown suggest there is a possible phase separation of the liquid and gas phase. Future studies should focus on the characterization of the phase space of these structures.
+
+In Fig.~\ref{Energy}c we plot the fraction of monomers as a functions of density for the same state points as above, and additionally for the designs C4(1) and C5 at $T=0.1$.
+%We find that the behavior for lower densities is similar independently of the design used; it becomes relevant only at higher densities. This suggests that mean field theories, like Wertheim theory \cite{Chapman1989}, might be able to describe these systems at low densities independently of design used.
+From this, we measure the critical micelle concentration (CMC), defined as the number density at $50\%$ of particles are in a monomeric state ($\rho_1=0.5$). The CMC is plotted with (green) squares in Fig.~\ref{Energy}d, where it is seen to have an exponential behaviour as a function of the inverse temperature, $1/T$. We also plot the points corresponding to the minima of the energy, which also show a similar exponential increase. We compare these results to two theoretical curves that both assume that bond formation is independent on the number of bonds already formed.
+
+The mean-field result (blue symbols) corresponds to assuming that the entropy loss is purely translational (see Ref.~\cite{Kraft2012} for a derivation) and predicts an exponential decay of the density of monomers
 
 \begin{equation}\label{meanfield}
 \rho_1=\frac{1}{V_b}\exp[\frac{c(n)}{(n-1)} \frac{\varepsilon}{k_B T}]
 \end{equation}
 
-\noindent where, $V_b$ is the bonding volume for the Kern-Frankel interaction and $c(n)/(n-1)$ is the average number of bonds per particle in the clusters. For our Monte Carlo simulations the value estimated is $c(n)/(n-1)\approx 2.51$, which is used for the line in Fig.~\ref{Energy}. The last line was estimated using Wertheim theory \cite{Sciortino2007, Russo2021}:
+\noindent here, $V_b$ is the bonding volume for the Kern-Frankel interaction and $c(n)/(n-1)$ is the average number of bonds per particle in the clusters. For our Monte Carlo simulations the value estimated is $c(n)/(n-1)\approx 2.51$, which is used for the line in Fig.~\ref{Energy}.
+
+The second prediction for $\rho_1$ is estimated using Wertheim theory \cite{Sciortino2007, Russo2021}:
 
 \begin{equation}\label{wertheim}
 \rho_1 = \rho X_1 X_2 X_3 X_4 X_5
 \end{equation}
 
-\noindent where $X_\alpha$ is the probability that patch $\alpha$ is non-bounded, given by Eq.~\ref{prob}. With the design used, the three top patches have the same colour which is different from the bottom two patches, as such, the relevant equations are:
+\noindent where $X_\alpha$ is the probability that patch $\alpha$ is non-bounded, and computed through Eq.~\ref{prob}. It can be proven that the mean-field and Wertheim predictions coincide in the limit of high-temperatures~\cite{Russo2020}.
 
-\begin{equation}
-X_1+X_2+X_3=\frac{3}{1+\rho \Delta (X_1+X_2+X_3)}
-\end{equation}
+% Put in the appendix
 
-\begin{equation}
-X_4+X_5=\frac{2}{1+\rho \Delta (X_4+X_5)}
-\end{equation}
+%With the design used, the three top patches have the same colour which is different from the bottom two patches, as such, the relevant equations are:
 
-The strength of the interactions between interacting patches, $\Delta$, is given by:
+%\begin{equation}
+%X_1+X_2+X_3=\frac{3}{1+\rho \Delta (X_1+X_2+X_3)}
+%\end{equation}
 
-\begin{equation}\label{delta}
-\begin{split}
-\Delta & = \frac{V_b (e^{\beta\varepsilon}-1)}{(1-\phi)^3} \bigg[ 1 - \frac{5}{2} \frac{(3\sigma^2+8\delta\sigma+3\delta^2)}{\sigma(15\sigma+4\delta)}\phi \\
-& - \frac{3}{2}\frac{(12\delta\sigma+5\delta^2)}{\sigma(15\sigma+4\delta)}\phi^2 \bigg]
-\end{split}
-\end{equation}
+%\begin{equation}
+%X_4+X_5=\frac{2}{1+\rho \Delta (X_4+X_5)}
+%\end{equation}
 
-\noindent where $\phi=\pi\rho\sigma^3/6$ is the volume fraction and $\beta=1/k_B T$. The theory deviates slightly from the simulation, with the mean-field model getting closer results. This might be due to taking the average bonds per particle explicitly in the formula which is taken directly from the simulations. On the other hand, Wertheim theory does not require any previous measurement. It also does not take into account the specific orientation of the patches, which in our case is quite anisotropic, given that all patches are only on one half of the particle. This biases assembly to the specific structures discussed previously, while making others improbable (for example chains).
+%The strength of the interactions between interacting patches, $\Delta$, is given by:
+
+%\begin{equation}\label{delta}
+%\begin{split}
+%\Delta & = \frac{V_b (e^{\beta\varepsilon}-1)}{(1-\phi)^3} \bigg[ 1 - \frac{5}{2} \frac{(3\sigma^2+8\delta\sigma+3\delta^2)}{\sigma(15\sigma+4\delta)}\phi \\
+%& - \frac{3}{2}\frac{(12\delta\sigma+5\delta^2)}{\sigma(15\sigma+4\delta)}\phi^2 \bigg]
+%\end{split}
+%\end{equation}
+
+%\noindent where $\phi=\pi\rho\sigma^3/6$ is the volume fraction and $\beta=1/k_B T$.
+
+
+The theory deviates slightly from the simulation, with the mean-field model getting closer results. This might be due to taking the average bonds per particle explicitly in the formula which is taken directly from the simulations. On the other hand, Wertheim theory does not require any previous measurement. It also does not take into account the specific orientation of the patches, which in our case is quite anisotropic, given that all patches are only on one half of the particle. This biases assembly to the specific structures discussed previously, while making others improbable (for example chains).
 
 \subsection{Two particle species design}
 
