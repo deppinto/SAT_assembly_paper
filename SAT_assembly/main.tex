@@ -183,6 +183,8 @@ This is due to the fact that the probability of creating a wrong bound decreases
 \noindent
 \emph{5. Frustrated designs allow to target different structures depending on thermodynamic conditions.} In Fig.~\ref{Yield}\textit{d}  we plot the yield for a frustrated C5 design in which $\gamma=85.26^\circ$. The in-plane angle is close to the ideal angle for the assembly of the snub cube, which is indeed the most stable structure at low densities. But increasing the density we observe a switch to the smaller icosahedral shells. While the icosahedron has a much larger free energy of formation compared to the snub cube (due to the angle being unfavourable to the icosahedron), at high density this is compensated by the translational free energy (i.e. the ideal gas free energy), which is higher for the icosahedron (having a higher number density of clusters compared to the snub cube). The possibility to switch between different target structures as a function of external control parameters is a property of experimental interest.
 
+Using the single specie designs we have measured several thermodynamic properties. For the C2(1) design, we show that the average potential energy has a non monotonic dependence with the density~\cite{Sciortino2009}. We also measured similar values for the critical miscelle concentration with three different designs, C2(1), C4(1), and C5, highlighting the weak dependence on patch colour. Using a simple mean-field model we are able to fit the temperature dependence of the critical miscelle concentration ~\cite{Kraft2012, Hatch2016}. See the \textit{Supplementary Material} for a more in-depth discussion.
+
 \subsection{Structure selection}
 
 In the previous examples, control over the target structure was obtained either geometrically (by changing the angles $\gamma$ and $\theta_\text{max}$ as in Fig.~\ref{N1c2}), or thermodynamically (by changing the density as in Fig.~\ref{Yield}d). Here we demonstrate that SAT-assembly allows to encode structure selection directly into the patch colouring. In particular we look for designs that satisfy only the icosahedron but not the snub cube and snub dodecahedron, and vice-versa. We find that the mutual exclusion of all three target structures requires at least two particle species for the snub cube and icosahedron, but four species for the snub dodecahedron. Here we show results with two species and five colours $N_c=5$ for the icosahedron and snub cube and four species and twelve colours $N_c=12$ for the snub dodecahedron, even if other solutions with different number of colours also exist. The results with our selected designs are shown in Fig.~\ref{Sol}. For the two species design we highlight that a mutually exclusive selection of the target structures can be achieved via non trivial patch colour ordering using SAT.
@@ -197,71 +199,6 @@ Incidentally, we note that targeting only the snub dodecahedron is complicated b
 We note that the range of parameters where the snub dodecahedron is formed enlarges, but not as much as the icosahedron or the snub cube. In fact, the snub dodecahedron is not as robust to geometrical frustrations as the other structures. As $\gamma$ approaches $90^\circ$, snub cubes start forming due to geometrical incompatibilities, but given the colouring they never fully close. These almost complete structures require a large amount of time to break.
 
 %while also we also increase its yield, since it is more rare to find competing structures. Both for the icosahedron and snub cube designs we observe the increase of the parameter ranges over more in plane angles as well as $\cos\theta_{max}$, meaning that they are more resilient to changes in the geometry of the patches and width of the interactions. On the other hand, the diagram of the snub dodecahedron does not change substantially when compared to Fig~\ref{N1c2}. In this case, although the two species and five colors solution only satisfies the snub dodecahedron, one of the species, by itself, is able to form the other competing shells. We hypothesize that this will always be the case for any design, since the topology of the snub dodecahedron is almost the same as the snub cube, in term of which bonds are formed between particles and their orientations. Only one particle is the exception which is necessary to close the snub dodecahedron and not the snub cube. Thus, in any design with more than one species that satisfies the snub dodecahedron, there might be a subset of those species that will always satisfy the snub cube as well. We have explored all solutions in the two species case, varying the number of colors from two to ten, and in all one of its subsets always satisfies other shells (icosahedron or snub cube). One could try to exhaust (by brute force) all possible species and color combinations but as species and colors increase so do the number of solutions (and its subsets) making this a very demanding task.
-
-
-\subsection{Thermodynamic properties}
-
-\begin{figure*}[t]
-	\includegraphics{fig5.pdf}
-	\caption{\label{Energy} a) Average potential energy per particle as a function of density for different isotherms. For clarity, the x-axis is in log-scale. We observe a non-monotonic behaviour of the average energy characteristic of self-assembly systems. b) Frontal snapshots of the system for different densities and temperatures. Images were obtained with OVITO, where the colors represent particles that belong to the same cluster. For low densities, some colors repeat themselves even though particles are not bounded due to the large number of unbounded particles which count as clusters of size one. c) Fraction of monomers as a function of the density. Two new curves were added at $T=0.1$, with a different solution (as shown in Fig.~\ref{Yield}). d) Inverse temperature as a function of density for the point at which the fraction of monomers is equal to $50\%$ (critical micelle concentration). A theoretical curve is drawn to estimate the CMC, it is calculated using Eq.~\eqref{meanfield}. The curve corresponding to the energy minimum in a) is also shown. All results were simulated with the one specie and two color design (except for the two curves in the top right plot), with $\gamma=90^\circ$ and a $\cos\theta_{max}=0.98$.}
-\end{figure*}
-
-In Fig.~\ref{Energy} we present a study of the phase behavior of the two color solution, C2(1). For simplicity, we restrict ourselves to the parameters $\cos\theta_{max}=0.98$ and $\gamma=90^\circ$, a combination which favors the snub cube structure. In panel \emph{a} we plot the Energy-vs-density, $E(\rho)$, curve at different temperatures, where we observe a non-monotonic behavior of the average energy $E(\rho)$ with increasing density. This behaviour is characteristic of the self-assembly of finite-size aggregates~\cite{Sciortino2009}: at low densities the system is in a gas phase of mostly monomers (unbounded particles); with increasing density particles start to aggregate and the energy decreases approaching the value $E=5/2$ (in units of $\epsilon$) which corresponds to an ideal gas phase of fully formed aggregates; for larger densities the gas phase competes with a percolated liquid phase that, due to geometric constraints originating from the patches arrangement on the surface of the particle, cannot form all available bonds and has thus higher energy than the gas phase. A thermodynamic motivation for the link between a $E(\rho)$ minimum and phase separation is discussed in Ref.~\cite{Russo2021}. Fig.~\ref{Energy}b shows shapshots of Monte Carlo simulations of increasing densities and at three different temperatures, displaying the transition between a gas of monomers, to a gas of snub cubes, to a percolated liquid phase.
-
-
-
-%Here, the density is large enough and the temperature low enough for particles to bound and remain bounded until a snub cube is formed. These shells are the equilibrium structures for the patchy particles used. Since the density is still quite low, the average distance between clusters will be large enough such that they will rarely interact with each other over the course of the simulations, which leads to the gas of clusters.
-%For large densities, the liquid phase is approached and less clusters are formed leading to an increase of the average energy. Eventually the liquid phase percolates the system. These results in combination with the snapshots shown suggest there is a possible phase separation of the liquid and gas phase. Future studies should focus on the characterization of the phase space of these structures.
-
-In Fig.~\ref{Energy}c we plot the fraction of monomers as a functions of density for the same state points as above, and additionally for the designs C4(1) and C5 at $T=0.1$.
-%We find that the behavior for lower densities is similar independently of the design used; it becomes relevant only at higher densities. This suggests that mean field theories, like Wertheim theory \cite{Chapman1989}, might be able to describe these systems at low densities independently of design used.
-From this, we measure the critical micelle concentration (CMC), defined as the number density at $50\%$ of particles are in a monomeric state ($\rho_1=0.5$). The CMC is plotted with (green) squares in Fig.~\ref{Energy}d, where it is seen to have an exponential behaviour as a function of the inverse temperature, $1/T$. We also plot the points corresponding to the minima of the energy, which also show a similar exponential increase. The slope of these curves is well captured by 
-the mean-field prediction (blue symbols)~\cite{Kraft2012}
-%, where assumes that the entropy loss is purely translational (see Ref.~\cite{Kraft2012} for a derivation) and predicts an exponential decay of the density of monomers
-
-\begin{equation}\label{meanfield}
-\rho_1=\frac{1}{V_b}\exp[\frac{c(n)}{(n-1)} \frac{\varepsilon}{k_B T}]
-\end{equation}
-
-
-
-\noindent where $V_b$ is the bonding volume for the Kern-Frankel interaction and $c(n)/(n-1)$ is the average number of bonds per particle in the clusters. Using $c(n)/(n-1)$ as a fitting parameter~\cite{Hatch2016}, we employ a least-squares minimization to fit the simulation results for the CMC. We find a value of $c(n)/(n-1)\approx 1.728\pm 0.006$ best approximates the line shown in Fig.~\ref{Energy}.
-
-%For our Monte Carlo simulations the value estimated is $c(n)/(n-1)\approx 2.51$, which is used for the line in Fig.~\ref{Energy}.
-
-%The second prediction for $\rho_1$ is estimated using Wertheim theory \cite{Sciortino2007, Russo2021}:
-
-%\begin{equation}\label{wertheim}
-%\rho_1 = \rho X_1 X_2 X_3 X_4 X_5
-%\end{equation}
-
-%\noindent where $X_\alpha$ is the probability that patch $\alpha\in\left[1,\cdots, 5\right]$ is non-bounded, and computed through Eq.~\ref{prob}. It can be proven that the mean-field and Wertheim predictions coincide in the limit of high-temperatures~\cite{Russo2021}.
-
-% Put in the appendix
-
-%With the design used, the three top patches have the same colour which is different from the bottom two patches, as such, the relevant equations are:
-
-%\begin{equation}
-%X_1+X_2+X_3=\frac{3}{1+\rho \Delta (X_1+X_2+X_3)}
-%\end{equation}
-
-%\begin{equation}
-%X_4+X_5=\frac{2}{1+\rho \Delta (X_4+X_5)}
-%\end{equation}
-
-%The strength of the interactions between interacting patches, $\Delta$, is given by:
-
-%\begin{equation}\label{delta}
-%\begin{split}
-%\Delta & = \frac{V_b (e^{\beta\varepsilon}-1)}{(1-\phi)^3} \bigg[ 1 - \frac{5}{2} \frac{(3\sigma^2+8\delta\sigma+3\delta^2)}{\sigma(15\sigma+4\delta)}\phi \\
-%& - \frac{3}{2}\frac{(12\delta\sigma+5\delta^2)}{\sigma(15\sigma+4\delta)}\phi^2 \bigg]
-%\end{split}
-%\end{equation}
-
-%\noindent where $\phi=\pi\rho\sigma^3/6$ is the volume fraction and $\beta=1/k_B T$.
-
-
-%The theory deviates slightly from the simulation, with the mean-field model getting closer results. This might be due to taking the average bonds per particle explicitly in the formula which is taken directly from the simulations. On the other hand, Wertheim theory does not require any previous measurement. It also does not take into account the specific orientation of the patches, which in our case is quite anisotropic, given that all patches are only on one half of the particle. This biases assembly to the specific structures discussed previously, while making others improbable (for example chains).
 
 \section{Conclusions}
 
@@ -348,6 +285,8 @@ The authors acknowledge all the financial support from the European Research Cou
 \bibliography{refs}
 
 \section{Supplementary Material}
+
+\subsection{Structure details}
 
 To map the patchy particle design into a SAT problem it is necessary to translate it into boolean variables and then impose constraints such that the structures in Fig.~1 are formed.
 
@@ -684,6 +623,71 @@ The two last groups define multiple clauses each, the first enforces that all pa
 	\hline
 	\caption{Topology of the snub dodecahedron.}
 \end{longtable}
+
+
+\subsection{Thermodynamic properties}
+
+\begin{figure*}[t]
+	\includegraphics{fig5.pdf}
+	\caption{\label{Energy} a) Average potential energy per particle as a function of density for different isotherms. For clarity, the x-axis is in log-scale. We observe a non-monotonic behaviour of the average energy characteristic of self-assembly systems. b) Frontal snapshots of the system for different densities and temperatures. Images were obtained with OVITO, where the colors represent particles that belong to the same cluster. For low densities, some colors repeat themselves even though particles are not bounded due to the large number of unbounded particles which count as clusters of size one. c) Fraction of monomers as a function of the density. Two new curves were added at $T=0.1$, with a different solution (as shown in Fig.~\ref{Yield}). d) Inverse temperature as a function of density for the point at which the fraction of monomers is equal to $50\%$ (critical micelle concentration). A theoretical curve is drawn to estimate the CMC, it is calculated using Eq.~\eqref{meanfield}. The curve corresponding to the energy minimum in a) is also shown. All results were simulated with the one specie and two color design (except for the two curves in the top right plot), with $\gamma=90^\circ$ and a $\cos\theta_{max}=0.98$.}
+\end{figure*}
+
+In Fig.~\ref{Energy} we present a study of the phase behavior of the two color solution, C2(1). For simplicity, we restrict ourselves to the parameters $\cos\theta_{max}=0.98$ and $\gamma=90^\circ$, a combination which favors the snub cube structure. In panel \emph{a} we plot the Energy-vs-density, $E(\rho)$, curve at different temperatures, where we observe a non-monotonic behavior of the average energy $E(\rho)$ with increasing density. This behaviour is characteristic of the self-assembly of finite-size aggregates~\cite{Sciortino2009}: at low densities the system is in a gas phase of mostly monomers (unbounded particles); with increasing density particles start to aggregate and the energy decreases approaching the value $E=5/2$ (in units of $\epsilon$) which corresponds to an ideal gas phase of fully formed aggregates; for larger densities the gas phase competes with a percolated liquid phase that, due to geometric constraints originating from the patches arrangement on the surface of the particle, cannot form all available bonds and has thus higher energy than the gas phase. A thermodynamic motivation for the link between a $E(\rho)$ minimum and phase separation is discussed in Ref.~\cite{Russo2021}. Fig.~\ref{Energy}b shows shapshots of Monte Carlo simulations of increasing densities and at three different temperatures, displaying the transition between a gas of monomers, to a gas of snub cubes, to a percolated liquid phase.
+
+
+
+%Here, the density is large enough and the temperature low enough for particles to bound and remain bounded until a snub cube is formed. These shells are the equilibrium structures for the patchy particles used. Since the density is still quite low, the average distance between clusters will be large enough such that they will rarely interact with each other over the course of the simulations, which leads to the gas of clusters.
+%For large densities, the liquid phase is approached and less clusters are formed leading to an increase of the average energy. Eventually the liquid phase percolates the system. These results in combination with the snapshots shown suggest there is a possible phase separation of the liquid and gas phase. Future studies should focus on the characterization of the phase space of these structures.
+
+In Fig.~\ref{Energy}c we plot the fraction of monomers as a functions of density for the same state points as above, and additionally for the designs C4(1) and C5 at $T=0.1$.
+%We find that the behavior for lower densities is similar independently of the design used; it becomes relevant only at higher densities. This suggests that mean field theories, like Wertheim theory \cite{Chapman1989}, might be able to describe these systems at low densities independently of design used.
+From this, we measure the critical micelle concentration (CMC), defined as the number density at $50\%$ of particles are in a monomeric state ($\rho_1=0.5$). The CMC is plotted with (green) squares in Fig.~\ref{Energy}d, where it is seen to have an exponential behaviour as a function of the inverse temperature, $1/T$. We also plot the points corresponding to the minima of the energy, which also show a similar exponential increase. The slope of these curves is well captured by 
+the mean-field prediction (blue symbols)~\cite{Kraft2012}
+%, where assumes that the entropy loss is purely translational (see Ref.~\cite{Kraft2012} for a derivation) and predicts an exponential decay of the density of monomers
+
+\begin{equation}\label{meanfield}
+\rho_1=\frac{1}{V_b}\exp[\frac{c(n)}{(n-1)} \frac{\varepsilon}{k_B T}]
+\end{equation}
+
+
+
+\noindent where $V_b$ is the bonding volume for the Kern-Frankel interaction and $c(n)/(n-1)$ is the average number of bonds per particle in the clusters. Using $c(n)/(n-1)$ as a fitting parameter~\cite{Hatch2016}, we employ a least-squares minimization to fit the simulation results for the CMC. We find a value of $c(n)/(n-1)\approx 1.728\pm 0.006$ best approximates the line shown in Fig.~\ref{Energy}.
+
+%For our Monte Carlo simulations the value estimated is $c(n)/(n-1)\approx 2.51$, which is used for the line in Fig.~\ref{Energy}.
+
+%The second prediction for $\rho_1$ is estimated using Wertheim theory \cite{Sciortino2007, Russo2021}:
+
+%\begin{equation}\label{wertheim}
+%\rho_1 = \rho X_1 X_2 X_3 X_4 X_5
+%\end{equation}
+
+%\noindent where $X_\alpha$ is the probability that patch $\alpha\in\left[1,\cdots, 5\right]$ is non-bounded, and computed through Eq.~\ref{prob}. It can be proven that the mean-field and Wertheim predictions coincide in the limit of high-temperatures~\cite{Russo2021}.
+
+% Put in the appendix
+
+%With the design used, the three top patches have the same colour which is different from the bottom two patches, as such, the relevant equations are:
+
+%\begin{equation}
+%X_1+X_2+X_3=\frac{3}{1+\rho \Delta (X_1+X_2+X_3)}
+%\end{equation}
+
+%\begin{equation}
+%X_4+X_5=\frac{2}{1+\rho \Delta (X_4+X_5)}
+%\end{equation}
+
+%The strength of the interactions between interacting patches, $\Delta$, is given by:
+
+%\begin{equation}\label{delta}
+%\begin{split}
+%\Delta & = \frac{V_b (e^{\beta\varepsilon}-1)}{(1-\phi)^3} \bigg[ 1 - \frac{5}{2} \frac{(3\sigma^2+8\delta\sigma+3\delta^2)}{\sigma(15\sigma+4\delta)}\phi \\
+%& - \frac{3}{2}\frac{(12\delta\sigma+5\delta^2)}{\sigma(15\sigma+4\delta)}\phi^2 \bigg]
+%\end{split}
+%\end{equation}
+
+%\noindent where $\phi=\pi\rho\sigma^3/6$ is the volume fraction and $\beta=1/k_B T$.
+
+
+%The theory deviates slightly from the simulation, with the mean-field model getting closer results. This might be due to taking the average bonds per particle explicitly in the formula which is taken directly from the simulations. On the other hand, Wertheim theory does not require any previous measurement. It also does not take into account the specific orientation of the patches, which in our case is quite anisotropic, given that all patches are only on one half of the particle. This biases assembly to the specific structures discussed previously, while making others improbable (for example chains).
 
 \end{document}
 
