@@ -269,22 +269,38 @@ For the following results we considered Monte Carlo (MC) simulations with two po
 
 We follow the same SAT formulation as the one in Ref.~\cite{Russo2022}. We consider that each patch can have a given color between $1\leq x_c\leq N_c$, where $N_c$ is the total number of colors. These colors can be distributed onto the patches in specific arrangements, each unique sequence can be considered a particle specie, thus $1\leq x_p\leq N_p$, where $N_p$ is the total number of species. SAT is then used to find if a given combination of $N_p$ and $N_c$ can satisfy a given polyhedral shell, e.g. if it satisfies all the topological constraints, and a solution/design is calculated which can be used to prepare the composition of the system. In the \emph{Supplemental Material} we go into more detail on the different constraints (clauses) used in SAT.
 
-In Fig~\ref{SAT} we have a schematic showing the patchy particles used and the different configurations assembled. There are three possible polyhedron shells that can form and fully close, depending on the parameters and SAT solution used: the regular icosahedron, the snub cube and the snub dodecahedron. We consider the assembly of patchy particles of valence five. The positions of the patches, in the orthonormal base associated with the patchy particle, are given as:
+In Fig~\ref{SAT} we have a schematic showing the patchy particles used and the different configurations assembled. There are three possible polyhedron shells that can form and fully close, depending on the parameters and SAT solution used: the regular icosahedron, the snub cube and the snub dodecahedron. We consider the assembly of patchy particles of valence five. The positions of the patches, for the case of the icosahedron, in the orthonormal base associated with the patchy particle, are given as:
 
 \begin{equation}
     \label{patch}
     \begin{aligned}
-    \textbf{p}_1=(-0.698, 0.186, -0.691) \\
-    \textbf{p}_2=(-0.502, -0.756, -0.419) \\
-    \textbf{p}_3=(-0.123, -0.857, 0.5) \\ 
-    \textbf{p}_4=(-0.410, -0.007, 0.912) \\
-    \textbf{p}_5=(-0.751, -0.627, 0.204) .
+    \textbf{p}_1=(-\sqrt{\frac{\varphi+2}{5}}, 0, \frac{\varphi-1}{\sqrt{3-\varphi}}) \\
+    \textbf{p}_2=(-\frac{\varphi}{2}\sqrt{\frac{\varphi+2}{5}}, -\frac{1}{2}, \frac{\varphi-1}{\sqrt{3-\varphi}}) \\
+    \textbf{p}_3=(-\frac{\varphi}{2}\sqrt{\frac{\varphi+2}{5}}, \frac{1}{2}, \frac{\varphi-1}{\sqrt{3-\varphi}}) \\ 
+    \textbf{p}_4=(\frac{1-\varphi}{2}\sqrt{\frac{\varphi+2}{5}}, -\frac{\varphi}{2}, \frac{\varphi-1}{\sqrt{3-\varphi}}) \\
+    \textbf{p}_5=(\frac{1-\varphi}{2}\sqrt{\frac{\varphi+2}{5}}, \frac{\varphi}{2}, \frac{\varphi-1}{\sqrt{3-\varphi}}) .
     \end{aligned}
 \end{equation}
 
-\noindent for the case of the icosahedron. To form the other structures one can increase the in plane angle between $\textbf{p}_4$ and $\textbf{p}_5$ while maintaining the remaining ones. In the next section we explore how this geometrical change plays a role in the assembly. We look at different in plane angles between these two patches ranging from the minimum of $60$ degrees, for the icosahedron, to the maximum of $108$ degrees, for the snub dodecahedron.
+\noindent where $\varphi$ is the golden ratio. To form the other structures one can increase the in plane angle, $\gamma$, between $\textbf{p}_4$ and $\textbf{p}_5$. We do that by using $\textbf{p}_3$ as an axis of rotation for $\textbf{p}_4$ and $\textbf{p}_1$ as an axis of rotation for $\textbf{p}_5$. We multiply $\textbf{p}_4$ and $\textbf{p}_5$ by the respective rotation matrix:
 
-Using SAT we can find a minimal design that satisfies all three structures. For example, it is possible to consider the case that is shown in Fig.~\ref{SAT}, where we only use one specie (blue) of particles and two colors (green and red) for patches. In this design, green patches only interact with green and red with red. If the particles follow this coloring and interactions then the three structures can form. The SAT solution that leads to this design is not necessarily the only one that satisfies all structures but SAT only provides one solution at a time for the constraints provided. Nonetheless, it is flexible enough, such that, we can provide this solution found as a new constraint and thus avoid it altogether leading to new solutions (translating into different particle designs). This process can be iterated until all solutions are exhausted. We will first focus on this design with one specie and two colors to explore how the interaction and geometry of the patches plays a role in the assembly. We will also use it to explore the phase behavior of this patchy particle system. Then, we will use SAT to target specific shells in order to highlight the true use of SAT as a robust predicting tool.
+\begin{widetext}
+\begin{equation}
+	\begin{bmatrix}
+		\sqrt{\textbf{p}_{x,1}}+(1-\sqrt{\textbf{p}_{x,1}})\cos\theta & \textbf{p}_{x,1}\textbf{p}_{x,2}(1-\cos\theta)-\textbf{p}_{x,3}\sin\theta & \textbf{p}_{x,1}\textbf{p}_{x,3}(1-\cos\theta)+\textbf{p}_{x,2}\sin\theta \\
+		\textbf{p}_{x,1}\textbf{p}_{x,2}(1-\cos\theta)+\textbf{p}_{x,3}\sin\theta & \sqrt{\textbf{p}_{x,2}}+(1-\sqrt{\textbf{p}_{x,2}})\cos\theta & \textbf{p}_{x,2}\textbf{p}_{x,3}(1-\cos\theta)-\textbf{p}_{x,1}\sin\theta \\
+		\textbf{p}_{x,1}\textbf{p}_{x,3}(1-\cos\theta)-\textbf{p}_{x,2}\sin\theta & \textbf{p}_{x,2}\textbf{p}_{x,3}(1-\cos\theta)+\textbf{p}_{x,1}\sin\theta & \sqrt{\textbf{p}_{x,3}}+(1-\sqrt{\textbf{p}_{x,3}})\cos\theta
+	\end{bmatrix}
+\end{equation}
+\end{widetext}
+
+\noindent where $\textbf{p}_{x,\alpha}$ refers to the rotation axis vector and $\alpha$ the vector index. The angle of rotation $\theta$ is used to increase the in plane angle $\gamma$. At $\theta=0$, the in plane angle is $\gamma=60^\circ$, while at $\theta\approx-46.5$ (and $\theta\approx46.5$ for $\textbf{p}_{5}$) the in plane angle reaches the maximum used of $\gamma\approx108^\circ$.
+
+%In the next section we explore how this geometrical change plays a role in the assembly. We look at different in plane angles between these two patches ranging from the minimum of $60$ degrees, for the icosahedron, to the maximum of $108$ degrees, for the snub dodecahedron.
+
+Using SAT we can find a minimal design that satisfies all three structures. For example, it is possible to consider the case that is shown in Fig.~\ref{SAT}, where we only use one specie (blue) of particles and two colors (green and red) for patches. In this design, green patches only interact with green and red with red. If the particles follow this coloring and interactions then the three structures can form. The SAT solution that leads to this design is not necessarily the only one that satisfies all structures but SAT only provides one solution at a time for the constraints provided. Nonetheless, it is flexible enough, such that, we can provide this solution found as a new constraint and thus avoid it altogether leading to new solutions (translating into different particle designs). This process can be iterated until all solutions are exhausted. 
+
+%We will first focus on this design with one specie and two colors to explore how the interaction and geometry of the patches plays a role in the assembly. We will also use it to explore the phase behavior of this patchy particle system. Then, we will use SAT to target specific shells in order to highlight the true use of SAT as a robust predicting tool.
 
 \section{Acknowledgements}
 
